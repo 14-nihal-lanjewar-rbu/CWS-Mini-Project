@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ScholarPath - Scholarships</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="site-nav">
+        <div class="container d-flex flex-wrap align-items-center justify-content-between gap-3">
+            <a class="brand" href="index.html">ScholarPath<span>.</span></a>
+            <div class="d-flex flex-wrap gap-3">
+                <a class="nav-link" href="dashboard.html">Dashboard</a>
+                <a class="nav-link active" href="scholarships.html">Scholarships</a>
+                <a class="nav-link" href="documents.html">Documents</a>
+                <a class="nav-link" href="profile.html">Profile</a>
+                <a class="nav-link" href="index.html">Logout</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container page-wrap">
+        <div class="d-flex flex-wrap justify-content-between align-items-center mb-4">
+            <div>
+                <h2 class="fw-bold">Explore scholarships</h2>
+                <p class="small-muted mb-0">Browse the sample scholarship information below.</p>
+            </div>
+            <a href="documents.html" class="btn btn-outline-dark">Check documents</a>
+        </div>
+
+        <div class="soft-card mb-4">
+            <h5 class="fw-bold">Scholarship categories</h5>
+            <div class="d-flex flex-wrap gap-2 mt-3">
+                <a class="btn btn-main btn-sm" href="#all">All</a>
+                <a class="btn btn-outline-dark btn-sm" href="#merit">Merit</a>
+                <a class="btn btn-outline-dark btn-sm" href="#girls">Girls</a>
+                <a class="btn btn-outline-dark btn-sm" href="#obc">OBC</a>
+                <a class="btn btn-outline-dark btn-sm" href="#scst">SC / ST</a>
+                <a class="btn btn-outline-dark btn-sm" href="#income">Income based</a>
+            </div>
+        </div>
+
+        <div class="row g-3" id="all">
+            <div class="col-lg-7">
+                <div class="row g-3">
+                    <div class="col-md-6" id="merit">
+                        <div class="scholar-card purple-bg">
+                            <span class="pill" style="background: #FFFFFF;">Merit</span>
+                            <h5 class="fw-bold mt-3">Maharashtra Merit Scholarship</h5>
+                            <h4 class="fw-bold">Rs. 20,000</h4>
+                            <small>Deadline: 30 Nov</small>
+                            <a class="btn btn-dark btn-sm d-block mt-3" href="#meritDetails">View details</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6" id="girls">
+                        <div class="scholar-card coral-bg">
+                            <span class="pill" style="background: #FFFFFF;">Girls</span>
+                            <h5 class="fw-bold mt-3">Girls Higher Education Grant</h5>
+                            <h4 class="fw-bold">Rs. 50,000</h4>
+                            <small>Deadline: 5 Dec</small>
+                            <a class="btn btn-dark btn-sm d-block mt-3" href="#girlsDetails">View details</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6" id="obc">
+                        <div class="scholar-card mint-bg">
+                            <span class="pill" style="background: #FFFFFF;">OBC</span>
+                            <h5 class="fw-bold mt-3">OBC Post-Matric Scholarship</h5>
+                            <h4 class="fw-bold">Rs. 10,000</h4>
+                            <small>Deadline: 15 Dec</small>
+                            <a class="btn btn-dark btn-sm d-block mt-3" href="#obcDetails">View details</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6" id="scst">
+                        <div class="scholar-card yellow-bg">
+                            <span class="pill" style="background: #FFFFFF;">SC / ST</span>
+                            <h5 class="fw-bold mt-3">SC / ST Freeship Scheme</h5>
+                            <h4 class="fw-bold">Rs. 35,000</h4>
+                            <small>Deadline: 19 Nov</small>
+                            <a class="btn btn-dark btn-sm d-block mt-3" href="#scstDetails">View details</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6" id="income">
+                        <div class="scholar-card purple-bg">
+                            <span class="pill" style="background: #FFFFFF;">Income</span>
+                            <h5 class="fw-bold mt-3">Income Support Grant</h5>
+                            <h4 class="fw-bold">Rs. 25,000</h4>
+                            <small>Deadline: 22 Nov</small>
+                            <a class="btn btn-dark btn-sm d-block mt-3" href="#incomeDetails">View details</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="scholar-card coral-bg">
+                            <span class="pill" style="background: #FFFFFF;">Merit</span>
+                            <h5 class="fw-bold mt-3">State Topper Award</h5>
+                            <h4 class="fw-bold">Rs. 40,000</h4>
+                            <small>Deadline: 10 Dec</small>
+                            <a class="btn btn-dark btn-sm d-block mt-3" href="#topperDetails">View details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-5">
+                <div class="soft-card h-100">
+                    <small class="small-muted">Scholarship details</small>
+                    <h4 class="fw-bold mt-1" id="meritDetails">Maharashtra Merit Scholarship</h4>
+                    <div class="d-flex flex-wrap gap-2">
+                        <span class="pill purple-bg">Merit</span>
+                        <span class="pill mint-bg">Open</span>
+                        <span class="pill coral-bg">Deadline: 30 Nov</span>
+                    </div>
+                    <h3 class="fw-bold mt-3" style="color: var(--purple);">Rs. 20,000 / year</h3>
+                    <div class="mint-bg p-3 rounded-4 mt-3">
+                        <b>Eligibility</b>
+                        <p class="small-muted mb-0">Family income below 3 lakh. Marks above 60%. Resident of Maharashtra.</p>
+                    </div>
+                    <b class="d-block mt-3">Documents required</b>
+                    <div class="d-flex justify-content-between small mt-2">
+                        <span>Income Certificate</span>
+                        <span class="pill mint-bg">Verified</span>
+                    </div>
+                    <div class="d-flex justify-content-between small mt-2">
+                        <span>Aadhaar Card</span>
+                        <span class="pill mint-bg">Verified</span>
+                    </div>
+                    <div class="d-flex justify-content-between small mt-2">
+                        <span>Domicile Certificate</span>
+                        <span class="pill coral-bg">Missing</span>
+                    </div>
+                    <a href="documents.html" class="btn btn-coral mt-4">Go to Documents</a>
+                    <p class="small-muted mt-3 mb-0">This is sample information for the college project. Applications are not submitted online.</p>
+                </div>
+            </div>
+        </div>
+
+        <section class="soft-card mt-4">
+            <h5 class="fw-bold">More scholarship details</h5>
+            <details class="mt-3" id="girlsDetails">
+                <summary class="fw-bold">Girls Higher Education Grant - Rs. 50,000</summary>
+                <p class="small-muted mt-2">Sample category: Girls. Deadline: 5 Dec. Check the official scheme rules before applying.</p>
+            </details>
+            <hr>
+            <details id="obcDetails">
+                <summary class="fw-bold">OBC Post-Matric Scholarship - Rs. 10,000</summary>
+                <p class="small-muted mt-2">Sample category: OBC. Deadline: 15 Dec. Check the official scheme rules before applying.</p>
+            </details>
+            <hr>
+            <details id="scstDetails">
+                <summary class="fw-bold">SC / ST Freeship Scheme - Rs. 35,000</summary>
+                <p class="small-muted mt-2">Sample category: SC / ST. Deadline: 19 Nov. Check the official scheme rules before applying.</p>
+            </details>
+            <hr>
+            <details id="incomeDetails">
+                <summary class="fw-bold">Income Support Grant - Rs. 25,000</summary>
+                <p class="small-muted mt-2">Sample category: Income based. Deadline: 22 Nov. Check the official scheme rules before applying.</p>
+            </details>
+            <hr>
+            <details id="topperDetails">
+                <summary class="fw-bold">State Topper Award - Rs. 40,000</summary>
+                <p class="small-muted mt-2">Sample category: Merit. Deadline: 10 Dec. Check the official scheme rules before applying.</p>
+            </details>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container d-flex justify-content-between flex-wrap">
+            <b>ScholarPath</b>
+            <span>Home · Scholarships · Login</span>
+            <span>help@scholarpath.in</span>
+            <span>© 2026 ScholarPath.</span>
+        </div>
+    </footer>
+</body>
+</html>
