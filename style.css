@@ -213,7 +213,7 @@ a {
 }
 
 .login-side {
-    background: var(--purple);
+    background: #FF4B4E;
     color: #FFFFFF;
     min-height: 100vh;
     padding: 35px 5%;
