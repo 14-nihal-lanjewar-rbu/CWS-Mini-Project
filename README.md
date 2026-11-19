@@ -1,5 +1,5 @@
 # Topic - ScholarPath scholarship finder
-# Team membeers-
+# Team members-
 1. Pushkar Upadhyay
 2. Mohammed Calcuttawala
 3. Nihal Lanjewar
